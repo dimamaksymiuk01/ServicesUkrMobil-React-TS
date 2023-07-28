@@ -8,6 +8,8 @@ import NotFound from "./pages/notFound/NotFound.tsx";
 import AdminPanel from "./pages/admin/AdminPanel.tsx";
 import ClientList from "./pages/clientList/ClientList.tsx";
 
+import './App.css'
+
 
 function App() {
 

@@ -8,17 +8,12 @@
   --cornerRad: 4px;
 }
 .burgerMenu {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-
-details {
-  //margin: 40px;
-}
 summary {
   writing-mode: vertical-lr;
   text-align: center;
   padding: 12px 10px;
-  width: 23px;
+  width: 26px;
   height: 17px;
   background-color: var(--primColor);
   border: 2px solid var(--secoColor);
@@ -62,7 +57,7 @@ details[open] summary::after {
 }
 .menu {
   height: 0;
-  width: fit-content;
+  //width: fit-content;
   border-radius: var(--cornerRad);
   background-color: var(--primColor);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
@@ -72,8 +67,10 @@ details[open] summary::after {
   justify-content: space-between;
   overflow: hidden;
   animation: closeMenu 300ms ease-in-out forwards;
+  padding-bottom: 16px;
 }
 .menu p {
+
   padding: 12px 24px;
   margin: 0 16px;
   color: var(--secoColor);
@@ -83,8 +80,8 @@ details[open] summary::after {
   transition: filter 200ms linear 0s;
 }
     a {
-    color: black; // Set the link color to black or any other desired color
-    text-decoration: none; // Remove the default text decoration
+    color: black;
+    text-decoration: none;
 
     &:hover {
       cursor: pointer;
