@@ -1,10 +1,13 @@
-
+@media screen and (min-width: 769px) {
+    .burgerMenu {
+      display: none;
+    }
+}
 :root {
-  --primColor: #dcdcdc;
   --secoColor: #555555;
   --cornerRad: 4px;
 }
-.navigateMenu {
+.burgerMenu {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 
@@ -70,7 +73,7 @@ details[open] summary::after {
   overflow: hidden;
   animation: closeMenu 300ms ease-in-out forwards;
 }
-.menu a {
+.menu p {
   padding: 12px 24px;
   margin: 0 16px;
   color: var(--secoColor);
@@ -79,20 +82,30 @@ details[open] summary::after {
   text-align: center;
   transition: filter 200ms linear 0s;
 }
-.menu a:nth-of-type(1) {
+    a {
+    color: black; // Set the link color to black or any other desired color
+    text-decoration: none; // Remove the default text decoration
+
+    &:hover {
+      cursor: pointer;
+      color: #555555;
+    }
+  }
+.menu p:nth-of-type(1) {
   padding-top: 24px;
 }
-.menu a:nth-last-of-type(1) {
+.menu p:nth-last-of-type(1) {
   border-bottom: none;
 }
-.menu a:hover {
+.menu p:hover {
   filter: brightness(200%);
+  cursor: pointer;
 }
 details::before {
   color: var(--secoColor);
   position: absolute;
   margin-left: 80px;
-  padding: 10px 10px;
+  //padding: 10px 10px;
   opacity: 0.4;
 }
 details[open]::before {
