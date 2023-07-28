@@ -1,12 +1,10 @@
 import {Link} from "react-router-dom";
 import '../style/navigate.scss'
-import Logo from "./Logo.tsx";
 
 function Navigate() {
 
   return (
       <div className={'navigateMenu'}>
-          {/*<Logo/>*/}
         <nav className="navMenu">
           <Link to="/markets">Markets</Link>
           <Link to="/archive">Archive</Link>
@@ -22,19 +20,3 @@ function Navigate() {
 }
 
 export default Navigate
-
-
-
-          // <div className={'burgerMenu'}>
-          //     <details>
-          //         <summary></summary>
-          //         <nav className="menu">
-          //             <p><Link to="/markets">Markets</Link></p>
-          //             <p><Link to="/archive">Archive</Link></p>
-          //             <p><Link to="/repairs">Repairs</Link></p>
-          //             <p><Link to="/storage">Storage</Link></p>
-          //             <p><Link to="/clientlist">Client list</Link></p>
-          //             <p><Link to="/admin">Admin panel</Link></p>
-          //         </nav>
-          //     </details>
-          // </div>
