@@ -1,10 +1,13 @@
-
+import '../../components/style/loginPage.scss'
+import LoginCard from "./Card.tsx";
 function Login() {
 
   return (
-    <>
-        <h2>Login page</h2>
-    </>
+      <>
+          <div className={'page'}>
+              <LoginCard/>
+          </div>
+      </>
   )
 }
 
