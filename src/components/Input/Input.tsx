@@ -2,7 +2,7 @@ import { FC, forwardRef, useState } from 'react';
 import { INPUT_FIELD} from "../../shared/types/types.ts";
 import ShowPasswordIcon from '../../../public/icons/showPassword.svg';
 import HidePasswordIcon from '../../../public/icons/hidePassword.svg';
-import {IPropsInputGroup} from "../../shared/types/interface.ts";
+import {IPropsInputGroup} from "../../shared/types/interfaces.ts";
 import styles from '../style/Input.module.scss';
 import classNames from "./classNames.ts";
 

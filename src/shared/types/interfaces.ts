@@ -1,4 +1,4 @@
-import {INPUT_FIELD} from "./types.ts";
+import {INPUT_FIELD} from "./enums.ts";
 import {ChangeEvent} from "react";
 
 export interface IPropsInputGroup {
@@ -14,4 +14,9 @@ export interface IPropsInputGroup {
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   disabled?: boolean;
+}
+
+export interface IAuthLogin {
+  name: string;
+  password: string;
 }

@@ -1,5 +1,5 @@
 import '../../components/style/loginPage.scss'
-import LoginCard from "./Card.tsx";
+import {LoginCard} from "./Card.tsx";
 function Login() {
 
   return (

@@ -1,4 +1,6 @@
-import {Link} from "react-router-dom";
+
+import '../../components/style/loginPage.scss';
+
 
 function BtnLogin() {
 
@@ -9,9 +11,8 @@ function BtnLogin() {
                   <small>Register</small>
               </span>
           </p>
-          <Link to="/markets">
-              <input type="submit" className="login pull-right" value="LogIn" />
-          </Link>
+          <input type="submit" className="login pull-right" value="LogIn" />
+
           <div className="clear-fix"></div>
       </div>
   )

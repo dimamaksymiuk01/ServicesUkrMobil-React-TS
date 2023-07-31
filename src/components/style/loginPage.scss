@@ -142,3 +142,11 @@ input[type='submit'].login:hover {
 input[type='submit'].login:focus {
   outline: none;
 }
+
+
+//I will remove this button when the login logic is ready
+.testBTN {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}

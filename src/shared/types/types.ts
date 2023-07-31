@@ -1,9 +1,7 @@
-export enum INPUT_FIELD {
-  TEXT = 'text',
-  NUMBER = 'number',
-  EMAIL = 'email',
-  PASSWORD = 'password',
-  PASSWORD_CONFIRM = 'passwordConfirm',
-  NAME = 'name',
-  MESSAGE = 'message',
-}
+import {FORM_FIELD} from "./enums.ts";
+
+export type FormData = {
+  [FORM_FIELD.NAME]: string;
+  [FORM_FIELD.PASSWORD]: string;
+};
+
