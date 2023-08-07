@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form';
 import { FORM_FIELD, INPUT_FIELD } from '../../shared/types/enums.ts';
 import { EMPTY_STRING } from '../../shared/consts/defaultValues.ts';
 import { IAuthLogin } from '../../shared/types/interfaces.ts';
-import {Link} from "react-router-dom";
 
 import '../../components/style/loginPage.scss';
 
@@ -46,16 +45,8 @@ export const LoginCard = () => {
                 className="form-style"
                 {...formLogin.register(INPUT_FIELD.PASSWORD)}
               />
-              <p>
-                <span>Forgot Password ?</span>
-              </p>
             </div>
-
             <BtnLogin />
-
-            <Link to="/markets">
-              <button className={'testBTN'} type='button'>Next page</button>
-            </Link>
 
           </div>
         </div>

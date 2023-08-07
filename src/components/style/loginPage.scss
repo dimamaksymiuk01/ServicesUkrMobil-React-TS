@@ -12,9 +12,7 @@ a:hover {
   color: #aaa;
 }
 
-.pull-right {
-  float: right;
-}
+
 
 .pull-left {
   float: left;
@@ -69,7 +67,10 @@ div#form {
 }
 
 div.form-item {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   margin-bottom: 20px;
   span {
     color: #58bff6;
@@ -122,7 +123,6 @@ div.form-item p.formLabel {
 }
 
 input[type='submit'].login {
-  float: right;
   width: 112px;
   height: 37px;
   border-radius: 19px;
@@ -141,12 +141,4 @@ input[type='submit'].login:hover {
 
 input[type='submit'].login:focus {
   outline: none;
-}
-
-
-//I will remove this button when the login logic is ready
-.testBTN {
-  position: absolute;
-  left: 10px;
-  bottom: 20px;
 }
