@@ -1,0 +1,20 @@
+{
+  "NAVMENU": {
+    "MARKETS": "markets",
+    "ARCHIVE": "archive",
+    "REPAIRS": "repairs",
+    "STORAGE": "storage",
+    "CLIENTLIST": "client list",
+    "ADMIN": "admin panel"
+  },
+  "PAGESNAME": {
+    "MARKETS": "markets",
+    "ARCHIVE": "archive",
+    "REPAIRS": "repairs",
+    "STORAGE": "storage",
+    "CLIENTLIST": "client list",
+    "ADMIN": "admin panel"
+  }
+}
+
+

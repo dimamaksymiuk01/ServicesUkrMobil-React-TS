@@ -1,8 +1,9 @@
 .logoLogin {
-	display: flex;
-	justify-content: center;
-	padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
+
 a {
   color: #58bff6;
   text-decoration: none;
@@ -11,8 +12,6 @@ a {
 a:hover {
   color: #aaa;
 }
-
-
 
 .pull-left {
   float: left;
@@ -24,7 +23,7 @@ a:hover {
 
 div.logo {
   text-align: center;
-  margin: 20px 20px 30px 20px;
+  margin: 20px;
   fill: #566375;
 }
 
@@ -72,10 +71,11 @@ div.form-item {
   align-items: center;
   gap: 50px;
   margin-bottom: 20px;
-  span {
-    color: #58bff6;
-    cursor: pointer;
-  }
+}
+
+div.form-item span {
+  color: #58bff6;
+  cursor: pointer;
 }
 
 input {
@@ -141,4 +141,14 @@ input[type='submit'].login:hover {
 
 input[type='submit'].login:focus {
   outline: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.form img {
+  margin-left: 25px;
+  padding: 30px;
 }

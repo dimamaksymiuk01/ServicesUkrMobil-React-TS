@@ -20,3 +20,7 @@ export interface IAuthLogin {
   name: string;
   password: string;
 }
+
+export interface Locale {
+  title: string;
+}

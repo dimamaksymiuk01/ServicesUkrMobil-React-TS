@@ -1,12 +1,11 @@
-import React from 'react';
-import LogoUkrMobil from './logoUkrMobil.tsx';
+import LogoUkrMobil from '../../components/header/logoUkrMobil.tsx';
 import BtnLogin from './BtnLogin.tsx';
 import { useForm } from 'react-hook-form';
 import { FORM_FIELD, INPUT_FIELD } from '../../shared/types/enums.ts';
 import { EMPTY_STRING } from '../../shared/consts/defaultValues.ts';
 import { IAuthLogin } from '../../shared/types/interfaces.ts';
 
-import '../../components/style/loginPage.scss';
+import '../../components/style/loginPage.css';
 
 export const LoginCard = () => {
 
@@ -27,7 +26,7 @@ export const LoginCard = () => {
     <>
       <form onSubmit={formLogin.handleSubmit(onSubmit)}>
         <div id="formWrapper">
-          <div id="form">
+          <div className={'form'} id="form">
             <LogoUkrMobil />
             <div className="form-item">
               <input

@@ -1,11 +1,13 @@
 import Header from "../../components/header/Header.tsx";
+import { useTranslation } from 'react-i18next';
 
 function Archive() {
+  const { t } = useTranslation();
 
   return (
     <>
-        <Header/>
-        <h2>Archive page</h2>
+      <Header/>
+      <h2>{t('PAGESNAME.ARCHIVE')}</h2>
     </>
   )
 }
