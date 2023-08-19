@@ -27,6 +27,7 @@ function NotFound() {
       </div>
       {/* END Lamp */}
       <section className="error">
+
         {/* Content */}
         <div className="error__content">
           <div className="error__message message">
@@ -36,8 +37,7 @@ function NotFound() {
             </p>
           </div>
           <div className="error__nav e-nav">
-            {/*<link to="/login" className="e-nav__link"></link>*/}
-              <Link to="/login">
+              <Link to="/markets">
             <button className="e-nav__link"></button>
               </Link>
           </div>

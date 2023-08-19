@@ -11,21 +11,22 @@ import { ROUTES } from './shared/types/enums.ts';
 
 
 import './App.css';
+import ErrorPage from './components/errorPage/errorPage.tsx'
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path={ROUTES.HOME} element={<Navigate to={ROUTES.LOGIN} />} />
+          <Route path={ROUTES.HOME} element={<Navigate to={ROUTES.LOGIN} />}/>
           <Route path={ROUTES.LOGIN} element={<Login />} />
-          <Route path={ROUTES.MARKETS} element={<Markets />} />
-          <Route path={ROUTES.ARCHIVE} element={<Archive />} />
-          <Route path={ROUTES.STORAGE} element={<Storage />} />
-          <Route path={ROUTES.REPAIRS} element={<Repairs />} />
-          <Route path={ROUTES.ADMIN} element={<AdminPanel />} />
-          <Route path={ROUTES.CLIENTLIST} element={<ClientList />} />
-          <Route path={ROUTES.NOTFOUND} element={<NotFound />} />
+          <Route path={ROUTES.MARKETS} element={<Markets />} errorElement={<ErrorPage/>}/>
+          <Route path={ROUTES.ARCHIVE} element={<Archive />} errorElement={<ErrorPage/>}/>
+          <Route path={ROUTES.STORAGE} element={<Storage />} errorElement={<ErrorPage/>}/>
+          <Route path={ROUTES.REPAIRS} element={<Repairs />} errorElement={<ErrorPage/>}/>
+          <Route path={ROUTES.ADMIN} element={<AdminPanel />} errorElement={<ErrorPage/>}/>
+          <Route path={ROUTES.CLIENTLIST} element={<ClientList />} errorElement={<ErrorPage/>}/>
+          <Route path={ROUTES.NOTFOUND} element={<NotFound />} errorElement={<ErrorPage/>}/>
         </Routes>
       </Router>
     </>
