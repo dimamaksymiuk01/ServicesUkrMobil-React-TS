@@ -1,14 +1,12 @@
-@media screen and (min-width: 769px) {
-    .burgerMenu {
-      display: none;
-    }
-}
 :root {
   --secoColor: #555555;
   --cornerRad: 4px;
 }
+
 .burgerMenu {
   font-size: 20px;
+}
+
 summary {
   writing-mode: vertical-lr;
   text-align: center;
@@ -24,40 +22,49 @@ summary {
   outline: none;
   transition: transform 200ms ease-in-out 0s;
 }
+
 summary::before,
 summary::after {
   position: static;
   top: 0;
   left: 0;
 }
+
 summary::before {
   content: "";
 }
+
 summary::after {
   content: "III";
   letter-spacing: -1px;
 }
+
 summary:hover {
   transform: scale(1.1);
 }
+
 summary::marker {
   font-size: 0;
 }
+
 summary::-webkit-details-marker {
   display: none;
 }
+
 details[open] .menu {
   animation-name: menuAnim;
 }
+
 details[open] summary::before {
   content: "X";
 }
+
 details[open] summary::after {
   content: "";
 }
+
 .menu {
   height: 0;
-  //width: fit-content;
   border-radius: var(--cornerRad);
   background-color: var(--primColor);
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
@@ -69,8 +76,8 @@ details[open] summary::after {
   animation: closeMenu 300ms ease-in-out forwards;
   padding-bottom: 16px;
 }
-.menu p {
 
+.menu p {
   padding: 12px 24px;
   margin: 0 16px;
   color: var(--secoColor);
@@ -79,35 +86,41 @@ details[open] summary::after {
   text-align: center;
   transition: filter 200ms linear 0s;
 }
-    a {
-    color: black;
-    text-decoration: none;
 
-    &:hover {
-      cursor: pointer;
-      color: #555555;
-    }
-  }
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #555555;
+}
+
 .menu p:nth-of-type(1) {
   padding-top: 24px;
 }
+
 .menu p:nth-last-of-type(1) {
   border-bottom: none;
 }
+
 .menu p:hover {
   filter: brightness(200%);
   cursor: pointer;
 }
+
 details::before {
   color: var(--secoColor);
   position: absolute;
   margin-left: 80px;
-  //padding: 10px 10px;
   opacity: 0.4;
 }
+
 details[open]::before {
   animation: fadeMe 300ms linear forwards;
 }
+
 @keyframes menuAnim {
   0% {
     height: 0;
@@ -116,6 +129,7 @@ details[open]::before {
     height: 312px;
   }
 }
+
 @keyframes fadeMe {
   0% {
     opacity: 0.4;
@@ -125,4 +139,8 @@ details[open]::before {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .burgerMenu {
+    display: none;
+  }
 }

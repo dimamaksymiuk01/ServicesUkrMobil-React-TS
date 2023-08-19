@@ -1,12 +1,10 @@
-
-import '../../components/style/loginPage.scss';
+import '../../components/style/loginPage.css';
 
 
 function BtnLogin() {
 
   return (
       <div className="form-item">
-          <span>Forgot Password ?</span>
           <input type="submit" className="login pull-right" value="LogIn" />
       </div>
   )

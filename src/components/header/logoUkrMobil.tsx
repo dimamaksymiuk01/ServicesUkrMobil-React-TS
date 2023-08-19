@@ -1,13 +1,11 @@
 import {UKRMOBILLOGO} from "../../shared/consts/picturesUrl.ts";
 
-import '../../components/style/loginPage.scss'
+import '../style/loginPage.css'
 
 function LogoUkrMobil() {
 
   return (
-      <div className={'logoLogin'}>
-          <img src={UKRMOBILLOGO}/>
-      </div>
+    <img className={'logo'} src={UKRMOBILLOGO} alt={'logoUkrMobil'}/>
   )
 }
 

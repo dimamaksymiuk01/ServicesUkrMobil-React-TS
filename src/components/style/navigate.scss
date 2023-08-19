@@ -2,45 +2,123 @@ h2 {
   text-align: center;
   margin-top: 40px;
 }
-@media screen and (max-width: 768px) {
-    .navigateMenu {
-      display: none;
-    }
-}
-
-
 
 .navigateMenu {
-
-
-* {
-  margin: 0;
-  padding: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-.navMenu {
   display: flex;
-  justify-content: center;
-  gap: 18px;
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    width: clamp(4.375rem, 2.067rem + 11.54vw, 10rem);
+    cursor: pointer;
+  }
+
+  .langAndLogout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  * {
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+
+  .navMenu {
+    display: flex;
+    justify-content: center;
+    gap: clamp(0.313rem, -0.057rem + 1.85vw, 1.125rem);
+    text-align: center;
+    align-items: center;
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: clamp(0.688rem, -0.316rem + 2.09vw, 1.25rem);
+      text-transform: uppercase;
+      font-weight: 500;
+      display: inline-block;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #5bd925;
+      }
+    }
+  }
+
+  .LogoutImg {
+    img {
+      width: clamp(1.875rem, 1.705rem + 0.85vw, 2.25rem);
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+
+  .setLanguage {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 40px;
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    background-color: ghostwhite;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
-.navMenu a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.NavigateMobile {
+  position: relative;
+
+  img:nth-child(2) {
+    position: absolute;
+    top: 2px;
+    left: 60px;
+    width: 113px;
+  }
+
+  img:nth-child(1) {
+    position: absolute;
+    top: 8px;
+    left: clamp(17.5rem, -2.322rem + 99.11vw, 45.313rem);
+    width: 30px;
+  }
+
+  .setLanguage {
+    left: clamp(10.938rem, -8.884rem + 99.11vw, 38.75rem);
+    top: -5px;
+    position: absolute;
+
+    img:nth-child(1) {
+      left: 20px;
+      width: 32px;
+      top: 13px;
+    }
+
+    img:nth-child(2) {
+      top: 13px;
+      width: 32px;
+      left: 60px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }
 
-.navMenu a:hover {
-  color: #5bd925;
-}
-
-
-}

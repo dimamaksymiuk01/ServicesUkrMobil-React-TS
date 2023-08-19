@@ -1,13 +1,14 @@
 import Header from "../../components/header/Header.tsx";
+import { useTranslation } from 'react-i18next';
 
-function Markets() {
+
+export default function Markets() {
+  const { t } = useTranslation();
 
   return (
     <>
-        <Header/>
-        <h2>Markets page</h2>
+      <Header />
+      <h2>{t('PAGESNAME.MARKETS')}</h2>
     </>
-  )
+  );
 }
-
-export default Markets

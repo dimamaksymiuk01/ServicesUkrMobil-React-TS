@@ -1,0 +1,18 @@
+{
+  "NAVMENU": {
+    "MARKETS": "маркети",
+    "ARCHIVE": "архів",
+    "REPAIRS": "ремонти",
+    "STORAGE": "склад",
+    "CLIENTLIST": "список клієнтів",
+    "ADMIN": "адмін панель"
+  },
+  "PAGESNAME": {
+    "MARKETS": "маркети",
+    "ARCHIVE": "архів",
+    "REPAIRS": "ремонти",
+    "STORAGE": "склад",
+    "CLIENTLIST": "список клієнтів",
+    "ADMIN": "адмін панель"
+  }
+}

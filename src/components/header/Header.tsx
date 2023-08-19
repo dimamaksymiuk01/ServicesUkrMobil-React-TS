@@ -1,13 +1,14 @@
-import Burger from "./BurgerMenu.tsx";
-import Navigate from "./NabigateMenu.tsx";
-import '../style/header.scss'
+import NavigateMenuMobile from './NavigateMenuMobile.tsx'
+import NavigateDesktop from "./NavigateMenuDesktop.tsx";
+
+import '../style/header.css'
 
 function Header() {
 
   return (
       <div className={'header'}>
-          <Burger/>
-          <Navigate/>
+          <NavigateMenuMobile/>
+          <NavigateDesktop/>
       </div>
   )
 }
